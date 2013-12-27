@@ -1,4 +1,10 @@
 ---
+- name: Install prerequisite packages that are necessary to compile applications and gems with native extensions
+  apt: pkg={{ item }}
+  with_items:
+    - autoconf
+    - build-essential
+
 - name: Install Ruby dependencies
   apt: pkg={{ item }}
        state=present
