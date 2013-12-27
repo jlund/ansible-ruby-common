@@ -8,7 +8,7 @@ Role Variables
 
 **Variables that *must* be set by the user (or another role)**
 
-    ruby_version: This variable controls the version of Ruby that will be compiled and installed. It should correspond with the tarball filename excluding the ".tar.gz2" extension (e.g. "ruby-1.9.3-p484").
+    ruby_version: This variable controls the version of Ruby that will be compiled and installed. It should correspond with the tarball filename excluding the ".tar.gz" extension (e.g. "ruby-1.9.3-p484").
 
     ruby_checksum: The SHA256 checksum of the gzipped tarball that will be downloaded and compiled.
 

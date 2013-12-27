@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /usr/local/src/
-tar xvfj {{ ruby_version }}.tar.gz2
+tar xvfz {{ ruby_version }}.tar.gz
 cd {{ ruby_version }}
 ./configure --prefix={{ ruby_location }}
 make
