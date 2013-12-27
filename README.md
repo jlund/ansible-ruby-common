@@ -18,6 +18,8 @@ Role Variables
 
     rails_env: This role includes a convenient shell script that lets you invoke Rake commands using Bundler with the proper RAILS_ENV environment variable set. This script is placed in /usr/local/bin/rake-env. This can be useful in other tasks (e.g. if you wanted to run a Rake task using the command module). This variable is used to control the Rails environment for this script and is set to "production" by default.
 
+    ruby_bundler_flags: This variable controls any extra flags that you would like to be passed to RubyGems when Bundler is first installed. For example, you can set this to "--no-document" to disable documentation generation, or "--version VERSION" to install a particular version of Bundler. The default is blank, and no extra flags are passed.
+
 This role also includes a GC wrapper shell script that lets you tune the Ruby garbage collection settings. This script is placed in /usr/local/bin/ruby-gc-wrapper. These three variables are used within the template that generates this script:
 
     ruby_free_min: Sets the RUBY_FREE_MIN environment variable.
