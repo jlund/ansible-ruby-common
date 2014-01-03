@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: "Joshua Lund"
-  description: "Ansible role that compiles and installs Ruby (https://www.ruby-lang.org) and Bundler (http://bundler.io). This role is generic enough to support any version of Ruby, and it is best used in conjunction with another role that supplies the required variables and that depends on this common base."
+  description: "Ansible role that compiles and installs Ruby (https://www.ruby-lang.org) and Bundler (http://bundler.io)."
   license: MIT
   min_ansible_version: 1.4
   platforms:
