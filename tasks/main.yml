@@ -2,7 +2,7 @@
 - name: Update APT cache
   apt: update_cache=yes
 
-- name: Number of cores
+- name: Retrieve the number of cores that are available for compilation
   command: nproc
   register: cores
 
