@@ -1,9 +1,15 @@
 ---
-ruby_dependencies:
+ruby_apt_dependencies:
   - libreadline-dev
   - libssl-dev
   - libyaml-dev
   - zlib1g-dev
+
+ruby_yum_dependencies:
+  - readline-devel
+  - openssl-devel
+  - libyaml-devel
+  - zlib-devel
 
 ruby_symlinks:
   - bundle
