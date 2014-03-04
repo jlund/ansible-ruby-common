@@ -11,6 +11,15 @@ galaxy_info:
     - name: Debian
       versions:
         - all
+    - name: Centos
+      versions:
+        - all
+    - name: Red Hat
+      versions:
+        - all
+    - name: Amazon
+      versions:
+        - all
   categories:
     - development
 dependencies: []
