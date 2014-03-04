@@ -32,7 +32,9 @@ These variables are blank by default (i.e. they do not change the GC settings at
 
 **Variables that are set by the role itself (and that shouldn't need to be modified)**
 
-> ruby_dependencies: Controls the installation of dependencies that are necessary in order to properly compile Ruby. Includes libreadline-dev, libssl-dev, libyaml-dev, and zlib1g-dev by default.
+> ruby_apt_dependencies: Controls the installation of dependencies that are necessary in order to properly compile Ruby on Debian and Ubuntu. Includes libreadline-dev, libssl-dev, libyaml-dev, and zlib1g-dev by default.
+
+> ruby_yum_dependencies: Controls the installation of dependencies that are necessary in order to properly compile Ruby on Amazon Linux, CentOS, and Red Hat. Includes readline-devel, openssl-devel, libyaml-devel, and zlib-devel by default.
 
 > ruby_symlinks: Controls which binaries will be symlinked into /usr/local/bin. Includes bundle, erb, gem, irb, rake, rdoc, ri, ruby, and testrb by default.
 
@@ -43,7 +45,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Joshua Lund
+Copyright (c) 2013-2014 Joshua Lund
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
