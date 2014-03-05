@@ -1,7 +1,20 @@
 ruby-common
 ========
 
-Ansible role that compiles and installs Ruby (https://www.ruby-lang.org) and Bundler (http://bundler.io). This role is generic enough to support any version of Ruby, and it is best used in conjunction with another role that supplies the required variables and that depends on this common base.
+Ansible role that compiles and installs [Ruby](https://www.ruby-lang.org) and [Bundler](http://bundler.io). This role is generic enough to support any version of Ruby, and it is best used in conjunction with another role that supplies the required variables and that depends on this common base.
+
+For example, the following roles use ruby-common:
+
+* ruby-1.9.3
+  * [Galaxy](https://galaxy.ansible.com/list#/roles/144)
+  * [GitHub](https://github.com/jlund/ansible-ruby-1.9.3)
+* ruby-2.0.0
+  * [Galaxy](https://galaxy.ansible.com/list#/roles/145)
+  * [GitHub](https://github.com/jlund/ansible-ruby-2.0.0)
+* ruby-2.1
+  * [Galaxy](https://galaxy.ansible.com/list#/roles/146)
+  * [GitHub](https://github.com/jlund/ansible-ruby-2.1)
+
 
 Role Variables
 --------------
