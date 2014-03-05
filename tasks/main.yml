@@ -7,7 +7,7 @@
   command: nproc
   register: cores
 
-- name: Install apt prerequisite packages that are necessary to compile applications and gems with native extensions
+- name: Install APT prerequisite packages that are necessary to compile applications and gems with native extensions
   apt: pkg={{ item }}
   with_items:
     - autoconf
@@ -21,7 +21,7 @@
     - "@Developer tools"
   when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux' or ansible_distribution == 'Amazon'
 
-- name: Install apt Ruby dependencies
+- name: Install APT Ruby dependencies
   apt: pkg={{ item }}
        state=present
   with_items: ruby_apt_dependencies
