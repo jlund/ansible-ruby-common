@@ -8,13 +8,10 @@ galaxy_info:
     - name: Amazon
       versions:
         - all
-    - name: Centos
-      versions:
-        - all
     - name: Debian
       versions:
         - all
-    - name: Red Hat
+    - name: EL
       versions:
         - all
     - name: Ubuntu
