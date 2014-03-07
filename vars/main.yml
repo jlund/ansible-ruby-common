@@ -23,3 +23,5 @@ ruby_symlinks:
   - testrb
 
 ruby_location: "/opt/{{ ruby_version }}"
+
+ruby_executable: "{{ ruby_location }}/bin/ruby"

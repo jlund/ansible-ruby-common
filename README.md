@@ -53,6 +53,8 @@ These variables are blank by default (i.e. they do not change the GC settings at
 
 > ruby_location: Controls where Ruby will be installed and is set to "/opt/{{ ruby_version }}" by default.
 
+> ruby_executable: Provides a convenient pointer to the Ruby binary that lets you run Ruby commands from other roles. It is set to "{{ ruby_location }}/bin/ruby" by default.
+
 License
 -------
 
